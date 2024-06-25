@@ -454,7 +454,7 @@ header{
 .right3img img{
     width: 70%;  
 }
-.camket-right button{
+.camket-right button {
     width: 180px;
     height: 45px;
     color: white;
@@ -465,12 +465,19 @@ header{
     font-family: var(--font-family);
     font-size: 15px;
 }
+.camket-right button a{
+    color: white;
+}
 .camket-right button:hover{
     background-color: white;
     color:#E31937;
     border-radius: 10px;
     border: 2px solid #E31937;
 }
+.camket-right button a:hover{
+    color: #E31937;
+}
+
 
 .dichvu{
     width: 100%;
@@ -571,17 +578,37 @@ header{
 }
 
 
+.slideshow-parents{
+    width: 100%;
+    height: 650px;
+    background-color: #20273E;
+    border-radius: 20px ;
+    margin-top: 100px;
+    
+}
+.slideshow-parents .tieude{
+    color: var(--text2-color);
 
-.slideshow-container { /* Thêm style cho thẻ cha */
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-left: 20px;
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.slideshow-container { 
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .slideshow{
-    width: 800px;
+    width: 800px ;
     overflow: hidden;
-    position: relative;
+
 }
 .list-images{
     display: flex;
@@ -594,18 +621,136 @@ header{
     font-size: 40px;
     color: #999;
     position: absolute;
-    top: 50%;
+    top: 3325px;
     transform: translateY(-50%);
     transition: 0.5s;
     cursor: pointer;
 }
 .btn-left{
-    left: 230px;
+    left: 100px;
 }
 .btn-right{
-    right: 230px;
+    right: 100px;
 }
 
+
+.johnteach {
+    
+    position: relative;
+    transition: opacity 0.5s ease-in-out; 
+}
+.johnteach:hover {
+    opacity: 1;
+}
+.johnteach .text1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color:var(--div1-color); 
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2; 
+    width: 350px;
+}
+
+.johnteach:hover .text1 {
+    opacity: 1; 
+}
+
+.text1 h1 {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.text1 h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text1 p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.text1 button{
+    background-color:var(--text1-color);
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1.5px solid var(--div1-color);
+    font-family: var(--font-family);
+    margin-top: 10px;
+    transition: 0.5s;
+    color: white;
+}
+.text1 button:hover{
+    background-color: #deeefa4d;
+    color:var(--text2-color);
+}
+
+.johnfarm {
+   
+    position: relative; 
+    transition: opacity 0.5s ease-in-out; 
+}
+.johnfarm:hover {
+    opacity: 1; 
+}
+.johnfarm .text2 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); 
+    background-color:var(--div1-color);
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    z-index: 2; 
+    width: 350px;
+}
+
+.johnfarm:hover .text2 {
+    opacity: 1; 
+}
+
+.text2 h1 {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+
+.text1 p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.text2 button{
+    background-color:var(--text1-color);
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1.5px solid var(--div1-color);
+    font-family: var(--font-family);
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.text2 button:hover{
+    background-color: #deeefa4d;
+    color:var(--text2-color);
+}
 
 footer{
     width: 100%;
@@ -719,4 +864,4 @@ footer .footer-up{
     justify-content: center;
     align-items: center;
     line-height: 50px;
-}    
+}
